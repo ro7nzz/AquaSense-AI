@@ -1,0 +1,32 @@
+{
+  "features": [
+    "4700008966_kW",
+    "4700008966_power_hour",
+    "4408411600_kW",
+    "4408411600_power_hour",
+    "4608927500_kvar_hour",
+    "238045_ws_temp",
+    "279805_ws_vigor",
+    "279804_ws_level",
+    "279625_ws_temp",
+    "279623_ws_vigor",
+    "319235_ws_temp",
+    "279831_ws_temp",
+    "326417_ws_temp",
+    "326416_ws_vigor",
+    "temp_site1_anomaly_score",
+    "sfc_temp_site1_anomaly_score"
+  ],
+  "excluded_features": [
+    "timestamp",
+    "fault_d7",
+    "gw_lvl_site2_anomaly_score",
+    "gw_temp_site2_anomaly_score"
+  ],
+  "target": "fault_d7",
+  "model_type": "Logistic Regression",
+  "training_rows": 6115,
+  "training_end": "2022-09-12 17:00:00",
+  "intended_output": "Experimental leak-proximity risk indicator",
+  "final_test_used_for_training": false
+}

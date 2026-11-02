@@ -11,7 +11,7 @@ build/
 venv/
 env/
 
-# Environment variables and secrets
+# Secrets
 .env
 .env.*
 !.env.example
@@ -19,20 +19,28 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data files
+# Dataset - retain the project dataset
 data/raw/*
-!data/raw/.gitkeep
-data/interim/*
-!data/interim/.gitkeep
+!data/raw/input_model_potenc_predXfault7_A.csv
+!data/raw/README_dataset.txt
 
-# Model artifacts and generated reports
+# Model - retain trained model and schema
 models/*
-!models/.gitkeep
+!models/aquasense_logistic_regression.joblib
+!models/feature_schema.json
+
+# Generated reports
 reports/*
-!reports/.gitkeep
+
+# Dashboard backups
+src/app/dashboard_backup*.py
+src/app/dashboard_before*.py
 
 # IDE and operating system
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Agent configuration
+.agents/
